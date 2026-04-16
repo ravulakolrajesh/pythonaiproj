@@ -3,6 +3,6 @@ FROM python:3.9-alpine
 WORKDIR /app
 COPY . .
 
-RUN pip install flask
+RUN pip install --no-cache-dir flask
 
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
